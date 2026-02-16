@@ -30,6 +30,7 @@ import { FormDemo2 } from "./components/form/FormDemo2";
 import { FormDemo3 } from "./components/form/FormDemo3";
 import { FormDemo4 } from "./components/form/FormDemo4";
 import { FormDemo5 } from "./components/form/FormDemo5";
+import { FormDemo6 } from "./components/form/FormDemo6";
 function App() {
   return (
     <div>
@@ -53,6 +54,7 @@ function App() {
         <Route path="/formdemo3" element={<FormDemo3/>}></Route>
         <Route path="/formdemo4" element={<FormDemo4/>}></Route>
         <Route path="/formdemo5" element={<FormDemo5/>}></Route>
+        <Route path="/formdemo6" element={<FormDemo6/>}></Route>
         <Route path="/*" element = {<ErrorNotFound/>}></Route>
       </Routes>
     </div>
