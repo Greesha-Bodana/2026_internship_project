@@ -72,7 +72,7 @@ export const Navbar = () => {
                 inputdemo2
               </Link>
             </li>
-            
+
             <li class="nav-item">
               <Link class="nav-link" to="/formdemo1">
                 formdemo1
@@ -83,12 +83,16 @@ export const Navbar = () => {
                 formdemo2
               </Link>
             </li>
-               <li class="nav-item">
+            <li class="nav-item">
               <Link class="nav-link" to="/formdemo3">
                 formdemo3
               </Link>
             </li>
-            
+            <li class="nav-item">
+              <Link class="nav-link" to="/formdemo4">
+                formdemo4
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

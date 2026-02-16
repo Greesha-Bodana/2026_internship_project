@@ -7,7 +7,7 @@ export const FormDemo1 = () => {
   const [userData, setuserData] = useState({})
   const [isSubmited, setisSubmited] = useState(false)
   const submitHandler = (data)=>{
-    console.log(data) //{} object
+    console.log(data) 
     setuserData(data)
     setisSubmited(true)
   }
