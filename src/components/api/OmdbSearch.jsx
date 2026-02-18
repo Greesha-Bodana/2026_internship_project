@@ -8,7 +8,7 @@ export const OmdbSearch = () => {
     const searchMovie = async()=>{
 
         const res = await axios.get("https://www.omdbapi.com/?apikey=f37c79df&s=Avatar")
-        //const res = await axios.get(`https://www.omdbapi.com/?apikey=9d57be0b&s=${searchParam}`)
+        //const res = await axios.get(`https://www.omdbapi.com/?apikey=f37c79df&s=${searchParam}`)
         console.log(res) 
         console.log(res.data)
         setmovies(res.data.Search)

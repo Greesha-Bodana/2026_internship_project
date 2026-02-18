@@ -36,36 +36,42 @@ import { ApiDemo2 } from "./components/api/ApiDemo2";
 import { ApiDemo3 } from "./components/api/ApiDemo3";
 import { OmdbSearch } from "./components/api/OmdbSearch";
 import { ApiDemo4 } from "./components/api/ApiDemo4";
+import { OmdbSearch2 } from "./components/api/OmdbSearch2";
+import { MovieDetail } from "./components/api/MovieDetail";
+import { MovieInput } from "./components/api/MovieInput";
 function App() {
   return (
     <div>
       <Navbar></Navbar>
-      
+
       <Routes>
         <Route path="/netflixhome" element={<NetflixHome />}></Route>
         <Route path="/netflixmovies" element={<NetflixMovies />}></Route>
         <Route path="/netflixshows" element={<NetflixShows />}></Route>
-        <Route path="/" element = {<HomeComponent/>}></Route>
-        <Route path="/watch/:name" element = {<Watch/>}></Route>
-        <Route path="/usestatedemo1" element ={<UseStateDemo1/>}></Route>
-        <Route path="/usestatedemo2" element ={<UseStateDemo2/>}></Route>
-        <Route path="/usestatedemo3" element ={<UseStateDemo3/>}></Route>
-        <Route path="/fundemo1" element ={<FunctionDemo1/>}></Route>
-        <Route path="/employees" element ={<Employees/>}></Route>
-        <Route path="/inputdemo1" element = {<InputDemo1/>}></Route>
-        <Route path="/inputdemo2" element = {<InputDemo2/>}></Route>
-        <Route path="/formdemo1" element = {<FormDemo1/>}></Route>
-        <Route path="/formdemo2" element={<FormDemo2/>}></Route>
-        <Route path="/formdemo3" element={<FormDemo3/>}></Route>
-        <Route path="/formdemo4" element={<FormDemo4/>}></Route>
-        <Route path="/formdemo5" element={<FormDemo5/>}></Route>
-        <Route path="/formdemo6" element={<FormDemo6/>}></Route>
-        <Route path="/apidemo1" element={<ApiDemo1/>}></Route>
-        <Route path="/apidemo2" element={<ApiDemo2/>}></Route>
-        <Route path="/apidemo3" element={<ApiDemo3/>}></Route>
-        <Route path="/omdb" element ={<OmdbSearch/>}></Route>
-        <Route path="/apidemo4" element={<ApiDemo4/>}></Route>
-        <Route path="/*" element = {<ErrorNotFound/>}></Route>
+        <Route path="/" element={<HomeComponent />}></Route>
+        <Route path="/watch/:name" element={<Watch />}></Route>
+        <Route path="/usestatedemo1" element={<UseStateDemo1 />}></Route>
+        <Route path="/usestatedemo2" element={<UseStateDemo2 />}></Route>
+        <Route path="/usestatedemo3" element={<UseStateDemo3 />}></Route>
+        <Route path="/fundemo1" element={<FunctionDemo1 />}></Route>
+        <Route path="/employees" element={<Employees />}></Route>
+        <Route path="/inputdemo1" element={<InputDemo1 />}></Route>
+        <Route path="/inputdemo2" element={<InputDemo2 />}></Route>
+        <Route path="/formdemo1" element={<FormDemo1 />}></Route>
+        <Route path="/formdemo2" element={<FormDemo2 />}></Route>
+        <Route path="/formdemo3" element={<FormDemo3 />}></Route>
+        <Route path="/formdemo4" element={<FormDemo4 />}></Route>
+        <Route path="/formdemo5" element={<FormDemo5 />}></Route>
+        <Route path="/formdemo6" element={<FormDemo6 />}></Route>
+        <Route path="/apidemo1" element={<ApiDemo1 />}></Route>
+        <Route path="/apidemo2" element={<ApiDemo2 />}></Route>
+        <Route path="/apidemo3" element={<ApiDemo3 />}></Route>
+        <Route path="/omdb" element={<OmdbSearch />}></Route>
+        <Route path="/apidemo4" element={<ApiDemo4 />}></Route>
+        <Route path="/omdb2" element={<OmdbSearch2 />}></Route>
+        <Route path="/moviedetail/:imdbid" element={<MovieDetail />} />
+        <Route path="movieinput" element={<MovieInput/>}></Route>
+        <Route path="/*" element={<ErrorNotFound />}></Route>
       </Routes>
     </div>
   );
