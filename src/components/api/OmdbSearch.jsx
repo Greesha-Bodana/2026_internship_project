@@ -7,7 +7,7 @@ export const OmdbSearch = () => {
     const [searchParam, setsearchParam] = useState("Iron Man")
     const searchMovie = async()=>{
 
-        const res = await axios.get("https://www.omdbapi.com/?apikey=9d57be0b&s=Avatar")
+        const res = await axios.get("https://www.omdbapi.com/?apikey=f37c79df&s=Avatar")
         //const res = await axios.get(`https://www.omdbapi.com/?apikey=9d57be0b&s=${searchParam}`)
         console.log(res) 
         console.log(res.data)
@@ -17,7 +17,7 @@ export const OmdbSearch = () => {
 
   return (
     <div style={{textAlign:"center"}}>
-        <h1>OMDB SEARCG</h1>
+        <h1>OMDB SEARCH</h1>
         <button onClick={()=>{searchMovie()}}>SEARCH</button>
         <table className='table'>
             <thead>
