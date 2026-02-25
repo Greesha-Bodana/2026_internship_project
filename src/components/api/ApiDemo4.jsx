@@ -6,10 +6,10 @@ export const ApiDemo4 = () => {
     const addUser = async()=>{
         //form -->
         const userObj = {
-            name:"Balram",
+            name:"amit",
             age:25,
-            email:"balram@gmail.com",
-            password:"balram567",
+            email:"amit@gmail.com",
+            password:"amit1234",
             isActive:true
         }
 
