@@ -4,14 +4,16 @@ import React from 'react'
 export const ApiDemo4 = () => {
 
     const addUser = async()=>{
+        //form -->
         const userObj = {
-            name:"krishna",
-            age:22,
-            email:"krishna1@gmail.com",
-            password:"krishna123",
+            name:"Balram",
+            age:25,
+            email:"balram@gmail.com",
+            password:"balram567",
             isActive:true
         }
 
+        //post(url,obj)
         try{
         const res = await axios.post("https://node5.onrender.com/user/user/",userObj)
         console.log(res)
